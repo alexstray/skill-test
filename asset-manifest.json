@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/skill-test/static/css/main.7b86f480.css",
+    "main.js": "/skill-test/static/js/main.1f95489b.js",
+    "static/media/HeroBanner.png": "/skill-test/static/media/HeroBanner.ba96bcfd23d1213ed04c.png",
+    "static/media/mountain1.png": "/skill-test/static/media/mountain1.0d5680dbaecf963d1918.png",
+    "static/media/peak.png": "/skill-test/static/media/peak.1268a276364b33eb1688.png",
+    "static/media/mountain2.png": "/skill-test/static/media/mountain2.b3b7b4f6f440f952215a.png",
+    "static/media/carousel2.png": "/skill-test/static/media/carousel2.9edbb66e29b691823352.png",
+    "static/media/carousel1.png": "/skill-test/static/media/carousel1.8b5125f3503c03baaafd.png",
+    "index.html": "/skill-test/index.html",
+    "main.7b86f480.css.map": "/skill-test/static/css/main.7b86f480.css.map",
+    "main.1f95489b.js.map": "/skill-test/static/js/main.1f95489b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b86f480.css",
+    "static/js/main.1f95489b.js"
+  ]
+}
