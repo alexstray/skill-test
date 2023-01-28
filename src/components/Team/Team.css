@@ -1,0 +1,57 @@
+.app__team {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.app__team-head {
+    position: absolute;
+    right: 0; left: 0;
+    padding-block: 2rem;
+    padding-inline: 300px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.app__team-head p {
+    margin-left: 2rem;
+    font-family: var(--font-lato);
+    font-size: 18px;
+}
+
+.app__team-tabs {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    left: 0;
+}
+
+.app__team-tabs_container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 12rem;
+    background-color: var(--color-blue);
+}
+
+
+@media screen and (max-width: 1240px) {
+    .app__team-head {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .app__team-tabs_container {
+        top: 15rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .app__team-tabs_container {
+        top: 22rem;
+    }
+    .app__team-head p {
+        font-size: 15px;
+    }
+}

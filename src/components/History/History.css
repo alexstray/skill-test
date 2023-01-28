@@ -1,0 +1,52 @@
+.app__history {
+    height: 100vh;
+    background: url(../../assets/peak.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.app__history-head {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.app__history-head_text {
+    font-family: var(--font-lato);
+    font-size: 20px;
+    margin-top: 0.5rem;
+    padding-inline: 5rem;
+}
+
+.app__history-carousel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(64, 79, 108, 0.7);
+    border-top: 1px solid rgb(131, 131, 131);
+    padding-inline: 15%;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .app__history {
+        padding: 0.25rem;
+    }
+    .app__history-head {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    .app__history-head_text {
+        padding: 0;
+        font-size: 16px;
+    }
+}
+

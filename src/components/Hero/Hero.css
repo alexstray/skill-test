@@ -1,0 +1,6 @@
+.app__hero {
+    height: 100vh;
+    background: url('../../assets/HeroBanner.png');
+    background-position: top right 60%;
+    background-size: cover;
+}

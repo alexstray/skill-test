@@ -1,0 +1,127 @@
+.app__navbar {
+    padding-block: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+.app__navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__navbar-logo {
+    display: flex;
+}
+
+.app__navbar-title {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+    display: flex;
+}
+.app__navbar-title--hidden {
+    display: none;
+}
+
+.app__navbar-title span {
+    color: var(--color-gray);
+    font-family: var(--font-bebas);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.app__navbar-title span:nth-of-type(2) {
+    color: var(--color-blue);
+    font-size: 22px;
+}
+
+.app__navbar-links {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: 14pt;
+    letter-spacing: 0.08em;
+    font-family: var(--font-lato);
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    justify-content: flex-end;
+    transition: 0.5s ease;
+}
+.app__navbar-links--scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: 14pt;
+    letter-spacing: 0.08em;
+    font-family: var(--font-lato);
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: black;
+    width: 100%;
+    justify-content: flex-end;
+    transition: 0.5s ease;
+}
+
+.app__navbar-links li:hover {
+    text-decoration: underline;
+}
+
+.fa-bars {
+    font-size: 18pt;
+    color: white;
+    display: none;
+    transition: 0.5s ease;
+}
+.fa--scroll {
+    font-size: 18pt;
+    color: black;
+    display: none;
+    transition: 0.5s ease;
+}
+
+.app__navbar-menu_links {
+    position: absolute;
+    background: white;
+    padding: 1.25rem;
+    margin-top: 1rem;
+    right: 5%;
+    top: 2.5rem;
+    width: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+}
+
+.app__navbar-menu_links li {
+    font-family: var(--font-lato);
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.08em;
+}
+
+.app__navbar-menu_links li:nth-of-type(2) {
+    margin-top: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .fa-bars {
+        display: block;
+    }
+    .app__navbar-links,
+    .app__navbar-links--scroll {
+        display: none;
+    }
+}

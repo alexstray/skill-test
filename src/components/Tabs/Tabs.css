@@ -1,0 +1,107 @@
+.app__tabs-btns {
+    display: flex;
+}
+
+.app__tabs-btns button {
+    font-family: var(--font-oswald);
+    font-size: 20pt;
+    padding: 0.25rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.active {
+    background: rgb(184, 184, 184);
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+.unactive {
+    color: rgb(184, 184, 184);
+}
+
+.app__tabs-schedule_img1 {
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 46px;
+    background: url('../../assets/mountain1.png');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.app__tabs-schedule_img2 {
+    position: absolute;
+    display: flex;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 46px;
+    background: url('../../assets/mountain2.png');
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.app__tabs-schedule_container {
+    width: 100%;
+    padding-inline: min(17vw, 18.75rem);
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.app__tabs-scehdule {
+    display: flex;
+    gap: 4rem;
+    font-family: var(--font-lato);
+    margin-top: 1rem;
+}
+
+.app__tabs-schedule_date1,
+.app__tabs-schedule_date2 {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 1rem 2rem;
+    flex-direction: column;
+}
+
+.app__tabs-schedule_date1 span,
+.app__tabs-schedule_date2 span {
+    font-family: var(--font-oswald);
+    font-size: 24pt;
+    font-weight: bold;
+    color: var(--color-blue);
+}
+
+.app__tabs-schedule_date1 {
+    display: flex;
+}
+
+.app__tabs-schedule_date2 {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .app__tabs-btns button {
+        font-size: 14pt;
+        padding: 0.25rem 0.5rem;
+    }
+    .app__tabs-schedule_img1,
+    .app__tabs-schedule_img2 {
+        top: 35px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app__tabs-schedule_container {
+        margin: 0;
+    }
+    .app__tabs-scehdule {
+        font-size: 12px;
+        gap: 0.5rem;
+    }
+}
